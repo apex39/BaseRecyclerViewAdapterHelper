@@ -194,9 +194,7 @@ public abstract class BaseQuickAdapter<T, K extends BaseViewHolder> extends Recy
 
     public void setOnLoadMoreListener(RequestLoadMoreListener requestLoadMoreListener, RecyclerView recyclerView) {
         openLoadMore(requestLoadMoreListener);
-        if (getRecyclerView() == null) {
             setRecyclerView(recyclerView);
-        }
     }
 
     /**
